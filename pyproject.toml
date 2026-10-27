@@ -1,0 +1,19 @@
+[project]
+name = "AyaNews"
+version = "0.1.0"
+description = "按标题关键词爬取特定领域刊物的最新文献（arXiv + Crossref）"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.28",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+AyaNews = "AyaNews.main:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["AyaNews*"]

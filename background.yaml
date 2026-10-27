@@ -1,0 +1,63 @@
+# 外观定制文件：报头、字体、标题与季节时段主题
+# 修改后下次发报 / 预览立即生效，无需改代码。
+
+banner:
+  image_dir: "background"     # 背景图所在文件夹（相对于项目根目录）
+  image_name: "background"    # 兜底图片文件名（主题未指定 image 时使用；不带扩展名自动识别）
+  pc_width: "1000px"           # PC 端内容列宽度
+
+title:
+  text: "🍁 AyaNews----Computation Mathematics"   # 报头标题
+  color: "#ffffff"            # 标题文字颜色（标题位于主题色条上）
+  font_size: "20px"
+  shadow: "0 1px 3px rgba(0,0,0,0.4)"   # 文字阴影
+
+fonts:
+  body: "-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif"
+
+# 季节时段规则：在某时间段内使用哪套主题参数（可自由增改时段）
+seasonal:
+  rules:
+    - { season: "spring", start: "03-01", end: "05-31" }   # 春 3-5 月
+    - { season: "summer", start: "06-01", end: "08-31" }   # 夏 6-8 月
+    - { season: "autumn", start: "09-01", end: "11-30" }   # 秋 9-11 月
+    - { season: "winter", start: "12-01", end: "02-28" }   # 冬 12-2 月（跨年写法：start > end）
+
+  # 各主题的文字配色与横幅图（改这里即可，每季可配自己的背景图）
+  themes:
+    spring:
+      label: "春季·浅绿"
+      image: "spring.png"          # 该主题的横幅图（banner.image_dir 下）
+      accent: "#7cb342"            # 标题链接 / 分组栏文字 / 统计数字
+      bright: "#9ccc65"            # 期刊徽章
+      tint_bg: "#f1f8e9"           # 分组栏浅色底
+      tint_border: "#d0e4b8"       # 标题下划线浅色
+      soft: "#eaf6dd"              # 横幅上的浅色小字
+      banner_fallback: "linear-gradient(135deg,#558b2f 0%,#9ccc65 100%)"   # 无图时的横幅渐变
+    summer:
+      label: "夏季·蓝"
+      image: "summer.png"
+      accent: "#1565c0"
+      bright: "#1e88e5"
+      tint_bg: "#e3f2fd"
+      tint_border: "#bcd8f5"
+      soft: "#d8ebfa"
+      banner_fallback: "linear-gradient(135deg,#0d47a1 0%,#1e88e5 100%)"
+    autumn:
+      label: "秋季·橙"
+      image: "autumn.png"
+      accent: "#9a3412"
+      bright: "#ea580c"
+      tint_bg: "#fef3e7"
+      tint_border: "#f0d3b3"
+      soft: "#ffe8d6"
+      banner_fallback: "linear-gradient(135deg,#9a3412 0%,#ea580c 100%)"
+    winter:
+      label: "冬季·紫"
+      image: "winter.png"
+      accent: "#7b1fa2"
+      bright: "#ab47bc"
+      tint_bg: "#f3e5f5"
+      tint_border: "#d9c2e3"
+      soft: "#efddf3"
+      banner_fallback: "linear-gradient(135deg,#4a148c 0%,#ab47bc 100%)"

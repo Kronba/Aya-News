@@ -1,0 +1,92 @@
+# 各领域知名刊物目录（用于兼容性测试）
+# field 仅用于报告分组；name 仅用于显示；issn 用于 Crossref 查询
+# （ISSN 失效时测试脚本会按刊名自动反查并记录在报告中）
+journals:
+  # ---------- 计算数学 / 科学计算 ----------
+  - { field: "计算数学", name: "SIAM Review", issn: "0036-1445" }
+  - { field: "计算数学", name: "SIAM Journal on Numerical Analysis", issn: "0036-1429" }
+  - { field: "计算数学", name: "SIAM Journal on Scientific Computing", issn: "1064-8275" }
+  - { field: "计算数学", name: "SIAM Journal on Optimization", issn: "1052-6234" }
+  - { field: "计算数学", name: "SIAM Journal on Applied Mathematics", issn: "0036-1399" }
+  - { field: "计算数学", name: "SIAM Journal on Mathematical Analysis", issn: "0036-1410" }
+  - { field: "计算数学", name: "SIAM Journal on Matrix Analysis and Applications", issn: "0895-4798" }
+  - { field: "计算数学", name: "SIAM Journal on Imaging Sciences", issn: "1936-4954" }
+  - { field: "计算数学", name: "Multiscale Modeling & Simulation", issn: "1540-3459" }
+  - { field: "计算数学", name: "SIAM Journal on Mathematics of Data Science", issn: "2577-0187" }
+  - { field: "计算数学", name: "Mathematics of Computation", issn: "0025-5718" }
+  - { field: "计算数学", name: "Numerische Mathematik", issn: "0029-599X" }
+  - { field: "计算数学", name: "IMA Journal of Numerical Analysis", issn: "0272-4979" }
+  - { field: "计算数学", name: "Journal of Computational Physics", issn: "0021-9991" }
+  - { field: "计算数学", name: "Computer Methods in Applied Mechanics and Engineering", issn: "0045-7825" }
+  - { field: "计算数学", name: "Journal of Scientific Computing", issn: "0885-7474" }
+  - { field: "计算数学", name: "BIT Numerical Mathematics", issn: "0006-3835" }
+  - { field: "计算数学", name: "Advances in Computational Mathematics", issn: "1019-7168" }
+  - { field: "计算数学", name: "ESAIM: Mathematical Modelling and Numerical Analysis", issn: "0764-583X" }
+  - { field: "计算数学", name: "Foundations of Computational Mathematics", issn: "1615-3375" }
+  - { field: "计算数学", name: "Journal of Computational and Applied Mathematics", issn: "0377-0427" }
+  - { field: "计算数学", name: "Applied Numerical Mathematics", issn: "0168-9274" }
+  - { field: "计算数学", name: "Numerical Algorithms", issn: "1017-1398" }
+  - { field: "计算数学", name: "International Journal for Numerical Methods in Engineering", issn: "0029-5981" }
+  - { field: "计算数学", name: "Computational Mechanics", issn: "0178-7675" }
+  - { field: "计算数学", name: "Computers & Mathematics with Applications", issn: "0898-1221" }
+  - { field: "计算数学", name: "Numerical Methods for Partial Differential Equations", issn: "0749-159X" }
+  - { field: "计算数学", name: "Journal of Numerical Mathematics", issn: "1570-2820" }
+  - { field: "计算数学", name: "Computational Methods in Applied Mathematics", issn: "1609-4840" }
+  - { field: "计算数学", name: "Computational Optimization and Applications", issn: "0926-6003" }
+  - { field: "计算数学", name: "Journal of Complexity", issn: "0885-064X" }
+  - { field: "计算数学", name: "Journal of Approximation Theory", issn: "0021-9045" }
+  - { field: "计算数学", name: "Constructive Approximation", issn: "0176-4276" }
+  - { field: "计算数学", name: "ACM Transactions on Mathematical Software", issn: "0098-3500" }
+  - { field: "计算数学", name: "Numerical Linear Algebra with Applications", issn: "1070-5325" }
+  - { field: "计算数学", name: "Mathematics and Computers in Simulation", issn: "0378-4754" }
+  - { field: "计算数学", name: "Computational and Applied Mathematics", issn: "0101-8205" }
+  - { field: "计算数学", name: "Inverse Problems", issn: "0266-5611" }
+  - { field: "计算数学", name: "Nature Computational Science", issn: "2662-8457" }
+  # ---------- 数学综合 ----------
+  - { field: "数学综合", name: "Annals of Mathematics", issn: "0003-486X" }
+  - { field: "数学综合", name: "Journal of the American Mathematical Society", issn: "0894-0347" }
+  - { field: "数学综合", name: "Inventiones Mathematicae", issn: "0020-9910" }
+  - { field: "数学综合", name: "Acta Mathematica", issn: "0001-5962" }
+  - { field: "数学综合", name: "Duke Mathematical Journal", issn: "0012-7094" }
+  - { field: "数学综合", name: "Communications on Pure and Applied Mathematics", issn: "0010-3640" }
+  - { field: "数学综合", name: "Publications Mathematiques de l'IHES", issn: "0073-8301" }
+  - { field: "数学综合", name: "Geometric and Functional Analysis", issn: "1016-443X" }
+  - { field: "数学综合", name: "American Journal of Mathematics", issn: "0002-9327" }
+  # ---------- 物理 ----------
+  - { field: "物理", name: "Physical Review Letters", issn: "0031-9007" }
+  - { field: "物理", name: "Physical Review X", issn: "2160-3308" }
+  - { field: "物理", name: "Reviews of Modern Physics", issn: "0034-6861" }
+  - { field: "物理", name: "Nature Physics", issn: "1745-2473" }
+  - { field: "物理", name: "Journal of High Energy Physics", issn: "1029-8479" }
+  - { field: "物理", name: "Physical Review D", issn: "2470-0010" }
+  # ---------- 化学 ----------
+  - { field: "化学", name: "Journal of the American Chemical Society", issn: "0002-7863" }
+  - { field: "化学", name: "Angewandte Chemie International Edition", issn: "1433-7851" }
+  - { field: "化学", name: "Nature Chemistry", issn: "1755-4330" }
+  - { field: "化学", name: "Chemical Reviews", issn: "0009-2665" }
+  # ---------- 材料 ----------
+  - { field: "材料", name: "Nature Materials", issn: "1476-1122" }
+  - { field: "材料", name: "Advanced Materials", issn: "0935-9648" }
+  - { field: "材料", name: "Advanced Functional Materials", issn: "1616-301X" }
+  # ---------- 计算机与AI ----------
+  - { field: "计算机AI", name: "Nature Machine Intelligence", issn: "2522-5839" }
+  - { field: "计算机AI", name: "IEEE Transactions on Pattern Analysis and Machine Intelligence", issn: "0162-8828" }
+  - { field: "计算机AI", name: "Journal of Machine Learning Research", issn: "1532-4435" }
+  - { field: "计算机AI", name: "Communications of the ACM", issn: "0001-0782" }
+  - { field: "计算机AI", name: "Journal of the ACM", issn: "0004-5411" }
+  - { field: "计算机AI", name: "IEEE Transactions on Information Theory", issn: "0018-9448" }
+  # ---------- 生物医学 ----------
+  - { field: "生物医学", name: "Nature", issn: "0028-0836" }
+  - { field: "生物医学", name: "Science", issn: "0036-8075" }
+  - { field: "生物医学", name: "Cell", issn: "0092-8674" }
+  - { field: "生物医学", name: "New England Journal of Medicine", issn: "0028-4793" }
+  - { field: "生物医学", name: "The Lancet", issn: "0140-6736" }
+  - { field: "生物医学", name: "Nature Medicine", issn: "1078-8956" }
+  # ---------- 经济学 ----------
+  - { field: "经济学", name: "American Economic Review", issn: "0002-8282" }
+  - { field: "经济学", name: "Quarterly Journal of Economics", issn: "0033-5533" }
+  - { field: "经济学", name: "Econometrica", issn: "0012-9682" }
+  - { field: "经济学", name: "Journal of Political Economy", issn: "0022-3808" }
+  # ---------- 工程 ----------
+  - { field: "工程", name: "Nature Electronics", issn: "2520-1131" }
+  - { field: "工程", name: "Proceedings of the IEEE", issn: "0018-9219" }

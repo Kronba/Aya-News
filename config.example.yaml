@@ -1,0 +1,81 @@
+# 文々日报配置文件
+# keywords: 关键词分组。组内为 AND（标题需同时包含），组间为 OR（命中任一组即收录）。
+keywords:
+  - ["Allen–Cahn equation"]                     # 偏微分方程
+
+arxiv:
+  enabled: true
+  # arXiv 学科分类（留空表示不限）。常用：math.NA 数值分析 / math.OC 优化 / math.AP 偏微分方程
+  categories: ["math.NA", "math.OC", "math.AP"]
+  days: 20           # 只看最近 N 天
+  max_results: 100   # 单次查询最大条数（arXiv 上限 2000）
+
+crossref:
+  enabled: true
+  # 要关注的期刊：计算数学高质量期刊（兼容性测试中 ✅ 完全兼容的刊物）
+  # name 仅用于显示，issn 用于定位（Crossref 按 ISSN 查询期刊）
+  journals:
+    - name: "SIAM Journal on Numerical Analysis"
+      issn: "0036-1429"
+    - name: "SIAM Journal on Scientific Computing"
+      issn: "1064-8275"
+    - name: "SIAM Journal on Optimization"
+      issn: "1052-6234"
+    - name: "SIAM Journal on Applied Mathematics"
+      issn: "0036-1399"
+    - name: "SIAM Journal on Mathematical Analysis"
+      issn: "0036-1410"
+    - name: "SIAM Journal on Matrix Analysis and Applications"
+      issn: "0895-4798"
+    - name: "SIAM Journal on Imaging Sciences"
+      issn: "1936-4954"
+    - name: "Multiscale Modeling & Simulation"
+      issn: "1540-3459"
+    - name: "SIAM Journal on Mathematics of Data Science"
+      issn: "2577-0187"
+    - name: "Mathematics of Computation"
+      issn: "0025-5718"
+    - name: "Numerische Mathematik"
+      issn: "0029-599X"
+    - name: "IMA Journal of Numerical Analysis"
+      issn: "0272-4979"
+    - name: "International Journal for Numerical Methods in Engineering"
+      issn: "0029-5981"
+    - name: "Numerical Methods for Partial Differential Equations"
+      issn: "0749-159X"
+    - name: "Journal of Numerical Mathematics"
+      issn: "1570-2820"
+    - name: "Computational Methods in Applied Mathematics"
+      issn: "1609-4840"
+    - name: "ACM Transactions on Mathematical Software"
+      issn: "0098-3500"
+    - name: "Numerical Linear Algebra with Applications"
+      issn: "1070-5325"
+    - name: "Inverse Problems"
+      issn: "0266-5611"
+  days: 30
+  max_results: 200
+  mailto: "you@example.com"   # 你的邮箱，Crossref 礼貌池凭此识别请求方
+
+output:
+  dir: "output"           # 输出目录
+  include_abstract: true  # Markdown 报告中是否包含摘要
+
+# 邮件通知。密码不写入文件，通过环境变量 CMATH_EMAIL_PASSWORD 提供。
+# QQ 邮箱 SMTP：smtp.qq.com（授权码登录），发件与收件均为 you@example.com
+email:
+  enabled: true
+  smtp_host: "smtp.qq.com"
+  smtp_port: 465
+  use_ssl: true           # true = SSL/SMTPS；false = STARTTLS
+  username: "you@example.com"
+  password_env: "CMATH_EMAIL_PASSWORD"
+  from_addr: "you@example.com"
+  to_addrs: ["you@example.com"]
+  subject: "文々日报"
+
+# 去重状态文件（记录已推送的文献，配合 --new-only 使用）
+state_file: "state.json"
+
+# 外观定制文件：报头背景图/字体/标题/季节时段主题（详见 background.yaml）
+appearance_file: "background.yaml"
