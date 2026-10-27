@@ -27,13 +27,9 @@ AyaNews 是一个面向科研工作者的文献自动推送工具。它按你给
 
 
 
-# Quick Start
+## Quick Start
 
-
-
-### 安装与配置
-
-要求 Python 3.10 或更高版本。克隆仓库并运行初始化脚本：
+本项目要求 Python 3.10 或更高版本。克隆仓库并运行初始化脚本：
 
 ```
 git clone <repository-url>
@@ -49,10 +45,6 @@ bash setup.sh
 ```
 CMATH_EMAIL_PASSWORD='邮箱授权码'
 ```
-
-
-
-### 运行
 
 执行以下命令，抓取论文并发送邮件：
 
